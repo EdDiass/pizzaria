@@ -196,6 +196,10 @@ main{
   padding: 5rem 0;
 }
 
+.section .tittle {
+  margin-bottom: 1rem;
+}
+
 #home{
   overflow: hidden;
 
@@ -245,5 +249,45 @@ main{
   margin-bottom: 2rem;
   max-width: 100%;
 }
+
+#about{
+  background: white;
+}
+
+#about .container{
+  margin: 0;
+}
+
+#about .image{
+  position: relative;
+}
+
+#about .image::before{
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: var(--base-color-second);
+  position: absolute;
+  top: -8.3%;
+  left: -33%;
+  z-index: 0;
+  
+}
+
+#about .image img{
+  position: relative;
+}
+
+#about .image img,
+#about .image::before{
+  border-radius: 0.25rem;
+}
+
+#about .text{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  
+}
+
 
 
