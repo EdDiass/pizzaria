@@ -189,7 +189,7 @@ nav.show  div.icon-close {
 }
 
 #header.scroll{
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
 }
 
 #header{
