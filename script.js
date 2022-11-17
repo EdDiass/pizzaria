@@ -27,3 +27,15 @@ window.addEventListener('scroll', function () {
     header.classList.remove('scroll')
   }
 })
+
+/* Biblioteca swiper */
+
+const swiper = new Swiper('.swiper', {
+  // Default parameters
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  mousewheel: true,
+  keyboard: true
+})

@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
     <link rel="stylesheet" href="assets/fontes/style.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,6 +17,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
+   
     <title>Pizzaria Chaudes.</title>
   </head>
   <body>
@@ -141,62 +148,68 @@
       <div class="divider-1"></div>
 
       <section class="section" id="testemonials">
-        <div class="container grid">
+        <div class="container">
           <header>
-            <h2 class="tittle">Depoimentos de quem já comprou aqui</h2>
+            <h2 class="tittle">Depoimentos de quem já passou aqui</h2>
           </header>
-          <div class="testemonials">
-            <div class="testemonial">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolore doloremque ab a inventore. Inventore delectus, nisi
-                  dolorem fugit perferendis sed deleniti nesciunt atque
-                  repellendus saepe accusamus voluptatem in distinctio aliquid.
-                </p>
-                <cite>
-                  <img src="assets/fotos/2.jpg" alt="" />
-                  Rosa Lima
-                </cite>
-              </blockquote>
-            </div>
+          <div class="testemonials swiper">
+            <div class="swiper-wrapper">
+              <div class="testemonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    adorei tudo as pizzas e o excelente atendimento de toda a
+                    equipe parabénssssssss
+                  </p>
+                  <cite>
+                    <img src="assets/fotos/2.jpg" alt="" />
+                    Rosa Lima
+                  </cite>
+                </blockquote>
+              </div>
 
-            <div class="testemonial">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolore doloremque ab a inventore. Inventore delectus, nisi
-                  dolorem fugit perferendis sed deleniti nesciunt atque
-                  repellendus saepe accusamus voluptatem in distinctio aliquid.
-                </p>
-                <cite>
-                  <img src="assets/fotos/10.jpg" alt="" />
-                  Suélem Leal
-                </cite>
-              </blockquote>
-            </div>
+              <div class="testemonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Quero agradecer e dar os meus parabens pela equipe ,muito
+                    atenciosos e educados.Os convidados elogiaram tanto os
+                    funcionarios como a pizza. estava tudo uma delicia.obrigada
+                  </p>
+                  <cite>
+                    <img src="assets/fotos/10.jpg" alt="" />
+                    Suélem Leal
+                  </cite>
+                </blockquote>
+              </div>
 
-            <div class="testemonial">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolore doloremque ab a inventore. Inventore delectus, nisi
-                  dolorem fugit perferendis sed deleniti nesciunt atque
-                  repellendus saepe accusamus voluptatem in distinctio aliquid.
-                </p>
-                <cite>
-                  <img src="assets/fotos/50.jpg" alt="" />
-                  vivian Souza
-                </cite>
-              </blockquote>
-            </div>
+              <div class="testemonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Quero agradecer e dar os meus parabens pela equipe ,muito
+                    atenciosos e educados.Os convidados elogiaram tanto os
+                    funcionarios como a pizza. estava tudo uma delicia.obrigada
+                  </p>
+                  <cite>
+                    <img src="assets/fotos/50.jpg" alt="" />
+                    Suélem Leal
+                  </cite>
+                </blockquote>
+              </div>
+              
+
+            
+
+            <div class="swiper-pagination"></div>
+
           </div>
         </div>
       </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <script src="script.js"></script>
   </body>
 </html>

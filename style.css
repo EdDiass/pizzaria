@@ -356,6 +356,16 @@ main{
   font-size: 1.5rem;
   margin-bottom: .75rem;
 }
+#testemonials .container{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#testemonials header{
+  margin-bottom: 0;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
 
 #testemonials{
   background: white;
@@ -399,6 +409,19 @@ main{
   margin-right: .5rem;
 }
 
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem ;
+}
+
+.swiper-pagination-bullet{
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
+}
 
 
 
