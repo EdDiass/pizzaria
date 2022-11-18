@@ -248,6 +248,15 @@ main{
   color: var(--base-color);
 }
 
+.card i{
+  transition: .3s ;
+}
+
+.card i:hover{
+  transform: translateY(-8px) ;
+}
+
+
 #home{
   overflow: hidden;
 
@@ -478,7 +487,14 @@ footer i{
 
 footer .social a{
   margin-right: 2rem;
+  transition: .3s;
+  display: inline-block;
 }
+
+footer .social a:hover{
+  transform: translateY(-8px);
+}
+
 
 .back-to-top{
   background: var(--base-color);
