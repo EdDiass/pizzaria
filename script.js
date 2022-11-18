@@ -28,7 +28,7 @@ window.addEventListener('scroll', function () {
   }
 })
 
-/* Biblioteca swiper */
+// Biblioteca swiper
 
 const swiper = new Swiper('.swiper', {
   // Default parameters
@@ -39,3 +39,22 @@ const swiper = new Swiper('.swiper', {
   mousewheel: true,
   keyboard: true
 })
+
+// Biblioteca scroll reveal
+
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 800,
+  reset: true
+})
+
+scrollReveal.reveal(
+  `#home .image, #home .text,
+  #about .image, #about .text,
+  #services header, #services .card,
+  #testemonials header, #testemonials .testemonial
+  #contact .text, #contact .links
+`,
+  { interval: 100 }
+)
