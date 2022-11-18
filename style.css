@@ -479,3 +479,77 @@ footer i{
 footer .social a{
   margin-right: 2rem;
 }
+
+.back-to-top{
+  background: var(--base-color);
+  color: var(--text-color-light);
+
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+
+  padding: .5rem;
+  clip-path: circle();
+  
+  font-size: 1.5;
+  /* line-height: 0; */
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: .3s;
+  transform: translateY(100%);
+
+/* 
+   animação floating
+=================================================
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px; 
+================================================
+      animação floating
+  */
+
+    /* animção jump 
+===============================================
+  animation: jumping 1s linear infinite;
+  cursor: pointer;
+===============================================
+      animação jump
+  */
+}
+
+.back-to-top.show{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 
+    jump
+===============================================    
+@keyframes jumping {
+  from {transform: translateY(-15px);}
+  50% {transform: translateY(0);}
+  to {transform: translateY(-15px);}
+===============================================  
+  jump
+
+} */
+
+
+/*
+  floating
+==============================================
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 5px); }
+  100%   { transform: translate(0, -0px); }   
+==============================================
+  floating
+} */
+
+
