@@ -223,9 +223,7 @@ nav.show  div.icon-close {
   color: var(--body-color);
 }
 
-main{
-  margin-top:  calc(var(--header-height) + 2rem);
-}
+
 
 .container{
   margin-left: 1.5rem;
@@ -238,7 +236,7 @@ main{
 }
 
 .section{
-  padding: 5rem 0;
+  padding: calc(5rem + var(--header-height)) 0;
 }
 
 .section .tittle {
@@ -478,6 +476,10 @@ footer {
   background: var(--base-color);
 }
 
+footer.section{
+  padding: 4rem 0;
+}
+
 footer .logo{
   display: inline-block;
   margin-bottom: 1.5rem;
@@ -494,8 +496,12 @@ footer i{
   color: var(--text-color-light);
 }
 
+footer .social{
+  grid-auto-flow: column;
+  width: fit-content;
+}
+
 footer .social a{
-  margin-right: 2rem;
   transition: .3s;
   display: inline-block;
 }
@@ -534,6 +540,16 @@ footer .social a:hover{
   opacity: 1;
   transform: translateY(0);
 }
+
+
+@media (min-width: 1200px) {
+  :root {
+    main{
+      margin-top: var(--header-height);
+    }
+  }
+}
+
 
 @media (min-width: 992px) {
  :root{
