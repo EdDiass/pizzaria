@@ -20,6 +20,11 @@ ul{
 --text-color-light: hsl(0 0% 98%);
 --body-color: hsl(0 0% 98%);
 
+ /* fonts */
+
+ --title-font-size: 1.875rem;
+ --subtittle-font-size: 1rem;
+
 }
 
 html{
@@ -238,6 +243,10 @@ main{
 
 .section .tittle {
   margin-bottom: 1rem;
+}
+
+.section .subtittle {
+  font-size: var(--subtittle-font-size);
 }
 
 .section header{
@@ -527,7 +536,10 @@ footer .social a:hover{
 }
 
 @media (min-width: 992px) {
-
+ :root{
+  --title-font-size: 2.25rem;
+  --subtittle-font-size: 1.125rem;
+ }
 }
 
 
