@@ -25,6 +25,9 @@ ul{
  --title-font-size: 1.875rem;
  --subtittle-font-size: 1rem;
 
+ --tittle-font: 'Poppins', sans-serif;
+ --body-font: 'DM Sans', sans-serif;
+
 }
 
 html{
@@ -32,14 +35,14 @@ html{
 }
 
 body{
-  font: 400 1rem 'DM Sans', sans-serif;
+  font: 400 1rem var(--body-font);
   color: var(--text-color);
   background: var(--body-color);
   -webkit-font-smooting: antialiased;
 }
 
 .tittle{
-  font: 700 1.875rem 'Poppins', sans-serif;
+  font: 700 var(--title-font-size) var(--tittle-font);
   color: var(--title-color);
   -webkit-font-smooting: auto;
 }
@@ -167,7 +170,7 @@ nav.show  div.icon-close {
   align-items: center;
   padding: 0 2rem;
   border-radius: 0.25rem;
-  font: 500 1rem "DN Sans", sans-serif;
+  font: 500 1rem var(--body-font);
   transition: background 0.3s;
 }
 
@@ -208,6 +211,10 @@ nav.show  div.icon-close {
   left: 0;
   z-index: 100;
   background-color: var(--body-color);
+}
+
+.chaudes{
+  color: var(--base-color);
 }
 
 .logo{
@@ -543,7 +550,85 @@ footer .social a:hover{
 
 
 @media (min-width: 1200px) {
-  
+    .container {
+      max-width: 1120px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .section {
+      padding: 10rem 0;
+    }
+
+    .section header,
+    #testemonials header {
+      max-width: 32rem;
+      text-align: center;
+      margin: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 6rem;
+    }
+
+    .button{
+      height: 3.3rem;
+    }
+
+    nav .menu{
+      opacity: 1;
+      visibility: visible;
+      top: 0;
+    }
+
+    nav .menu ul {
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav .menu ul li a.tittle{
+      font: 400 1rem var(--body-font) ;
+    }
+
+    nav .icon-menu{
+      display: none;
+    }
+
+    #home .container{
+      grid-auto-flow: column;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+
+    #home .image {
+      order: 1;
+    }
+
+    #home .text{
+      order: 0;
+      max-width: 24rem;
+      text-align: left;
+    }
+
+    #about .container {
+      margin: 0 auto;
+      grid-auto-flow: column ;
+
+    }
+
+    .cards{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card{
+      padding-left: 3rem ;
+      padding-right: 3rem;
+    }
+
+
+    #testemonials .container{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     main {
       margin-top: var(--header-height);
     }
