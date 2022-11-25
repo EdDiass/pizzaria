@@ -629,6 +629,15 @@ footer .social a:hover{
       margin-right: auto;
     }
 
+    #contact .container{
+      grid-auto-flow: column;
+      align-items: center;
+    }
+
+    #contact .test{
+      max-width: 25rem;
+    }
+
     main {
       margin-top: var(--header-height);
     }
