@@ -638,6 +638,16 @@ footer .social a:hover{
       max-width: 25rem;
     }
 
+    footer.section {
+      padding: 3.75rem 0;
+    }
+
+    footer .container{
+      grid-auto-flow: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
     main {
       margin-top: var(--header-height);
     }
