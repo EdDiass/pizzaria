@@ -7,10 +7,10 @@
 ul{
   list-style: none;
 }
-
+/* 159 or 480 or  390 or 590*/
 :root{
   --header-height: 4.5rem;
-  --hue: 159;
+  --hue: 480;
 /* HSL color mode */
 --base-color: hsl(var(--hue) 36% 57%);
 --base-color-second: hsl(var(--hue) 65% 88%);
